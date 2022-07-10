@@ -1,0 +1,401 @@
+@media (min-width: 320px) {
+  .header {
+    display: flex;
+    color: #fff;
+    width: 100%;
+    background: rgb(252, 74, 26);
+
+    .menu-headline {
+      display: flex;
+      padding-left: 12px;
+      flex-direction: row;
+      align-items: center;
+      flex: 33.3%;
+      justify-content: flex-start;
+      h5 {
+        font-family: "Montserrat-Bold";
+        padding-left: 12px;
+        cursor: normal;
+      }
+      .MuiSvgIcon-root:hover {
+        cursor: pointer;
+      }
+    }
+
+    .logo {
+      align-self: center;
+      flex: 33.3%;
+      text-align: center;
+    }
+    .interactive {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex: 33.3%;
+      justify-content: flex-end;
+      padding-right: 12px;
+      .css-2s90m6-MuiAvatar-root {
+        width: 30px;
+        height: 30px;
+        margin: 0 12px;
+      }
+    }
+  }
+  .weather-big-image-container {
+    display: flex;
+    .big-image-container {
+      background-image: url("../images/container-image.jpg");
+      display: none;
+      flex: 50%;
+      color: #fff;
+      .row-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 24px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 50%;
+        padding-left: 32px;
+        h5 {
+          padding-right: 32px;
+          padding-left: 8px;
+        }
+        a {
+          padding-right: 32px;
+          padding-left: 8px;
+          font-family: "Montserrat-Regular";
+          text-decoration: none;
+          color: #fff;
+        }
+        a:hover {
+          color: #e6e6e6;
+        }
+      }
+      h2 {
+        font-family: "Montserrat-Bold";
+        font-size: 32px;
+        padding-left: 32px;
+      }
+      h5 {
+        font-family: "Montserrat-Regular";
+        font-weight: normal;
+      }
+
+      .flex-end {
+        display: flex;
+        flex: 50%;
+        justify-content: flex-end;
+        padding-right: 32px;
+        h5 {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 8px;
+        }
+      }
+    }
+    .weather-container {
+      background-color: #f8a72f;
+      width: 100%;
+      .col-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .col-temperature {
+        padding-right: 8px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+        font-size: 120px;
+        flex: 50%;
+        color: #fff;
+        h2 {
+          font-size: 60px;
+          font-family: "Montserrat-Bold";
+        }
+        h3 {
+          font-size: 24px;
+          font-family: "Montserrat-Regular";
+          color: #ebebeb;
+        }
+        .menu {
+          display: none;
+          flex-direction: row;
+          h5 {
+            font-size: 16px;
+            font-family: "Montserrat-Regular";
+            padding-right: 12px;
+            font-weight: normal;
+          }
+        }
+      }
+      .col-weather {
+        padding-left: 8px;
+        font-size: 60px;
+        flex: 50%;
+        color: #fff;
+        h2 {
+          font-size: 28px;
+          font-family: "Montserrat-Bold";
+        }
+        h3 {
+          font-size: 24px;
+          font-family: "Montserrat-Regular";
+          color: #ebebeb;
+        }
+      }
+      .temperature-row-container {
+        display: flex;
+        padding-top: 16px;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        .temp-row {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          width: 100%;
+          color: #fff;
+          font-family: "Montserrat-Bold";
+
+          h2 {
+            width: 88px;
+          }
+        }
+        .time-row {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          width: 100%;
+          color: #ebebeb;
+          font-family: "Montserrat-Regular";
+          font-weight: normal;
+
+          h2 {
+            width: 88px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .graph-container {
+    display: flex;
+    flex-direction: row;
+    .graph {
+      display: none;
+      flex: 70%;
+      padding-left: 9%;
+      .VictoryContainer {
+        font-family: "Montserrat-Regular";
+      }
+    }
+    .stock {
+      font-family: "Montserrat-Regular";
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      flex: 100%;
+      .stock-tab {
+        text-align: center;
+        padding-right: 12px;
+        h2:first-of-type {
+          color: #333;
+        }
+        h3 {
+          font-weight: normal;
+          color: #d3d3d3;
+        }
+      }
+    }
+  }
+}
+@media (min-width: 720px) {
+  .temp-row {
+    justify-content: center;
+  }
+  .time-row {
+    justify-content: center;
+  }
+}
+@media (min-width: 1200px) {
+  .weather-big-image-container {
+    display: flex;
+    .big-image-container {
+      background-image: url("../images/container-image.jpg");
+      display: flex;
+      flex: 50%;
+      color: #fff;
+      .row-container {
+        display: flex;
+        flex-direction: row;
+      }
+      .wrapper {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-bottom: 24px;
+      }
+      .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex: 50%;
+        padding-left: 32px;
+        h5 {
+          padding-right: 32px;
+          padding-left: 8px;
+        }
+        a {
+          padding-right: 32px;
+          padding-left: 8px;
+          font-family: "Montserrat-Regular";
+          text-decoration: none;
+          color: #fff;
+        }
+        a:hover {
+          color: #e6e6e6;
+        }
+      }
+      h2 {
+        font-family: "Montserrat-Bold";
+        font-size: 32px;
+        padding-left: 32px;
+      }
+      h5 {
+        font-family: "Montserrat-Regular";
+        font-weight: normal;
+      }
+
+      .flex-end {
+        display: flex;
+        flex: 50%;
+        justify-content: flex-end;
+        padding-right: 32px;
+        h5 {
+          border-bottom: 1px solid #fff;
+          padding-bottom: 8px;
+        }
+      }
+    }
+    .weather-container {
+      background-color: #f8a72f;
+      flex: 50%;
+      .col-container {
+        display: flex;
+        justify-content: space-between;
+      }
+      .col-temperature {
+        padding-right: 32px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 120px;
+        flex: 50%;
+        color: #fff;
+        h2 {
+          font-size: 72px;
+          font-family: "Montserrat-Bold";
+        }
+        h3 {
+          font-size: 24px;
+          font-family: "Montserrat-Regular";
+          color: #ebebeb;
+        }
+        .menu {
+          display: flex;
+          flex-direction: row;
+          h5 {
+            font-size: 16px;
+            font-family: "Montserrat-Regular";
+            padding-right: 12px;
+            font-weight: normal;
+          }
+        }
+      }
+      .col-weather {
+        padding-left: 32px;
+        font-size: 120px;
+        flex: 50%;
+        color: #fff;
+        h2 {
+          font-size: 28px;
+          font-family: "Montserrat-Bold";
+        }
+        h3 {
+          font-size: 24px;
+          font-family: "Montserrat-Regular";
+          color: #ebebeb;
+        }
+      }
+      .temperature-row-container {
+        display: flex;
+        padding-top: 10%;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+        .temp-row {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          color: #fff;
+          font-family: "Montserrat-Bold";
+
+          h2 {
+            width: 88px;
+          }
+        }
+        .time-row {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          color: #ebebeb;
+          font-family: "Montserrat-Regular";
+          font-weight: normal;
+
+          h2 {
+            width: 88px;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .graph-container {
+    display: flex;
+    flex-direction: row;
+    .graph {
+      flex: 70%;
+      padding-left: 9%;
+      .VictoryContainer {
+        font-family: "Montserrat-Regular";
+      }
+    }
+    .stock {
+      font-family: "Montserrat-Regular";
+      display: flex;
+      align-items: flex-start;
+      padding-left: 32px;
+      flex-direction: column;
+      flex: 30%;
+      .stock-tab {
+        h2:first-of-type {
+          color: #333;
+        }
+        h3 {
+          font-weight: normal;
+          color: #d3d3d3;
+        }
+      }
+    }
+  }
+}
